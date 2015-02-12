@@ -12,18 +12,12 @@ class WorksController < ApplicationController
     when 'on:'
       # TODO: Extract into single responsibility class
       if Work.create(work_params)
-        render json: {
-          text: RandomResponder::Good.respond(params[:user_name])
-        }
+        render json: { text: RandomResponder::Good.respond(params[:user_name]) }
       else
-        render json: {
-          text: RandomResponder::Bad.respond(params[:user_name])
-        }
+        render json: { text: RandomResponder::Bad.respond(params[:user_name]) }
       end
     when 'report!'
-      render json: {
-        text: RandomResponder::Lazy.respond(params[:user_name])
-      }
+      render json: { text: RandomResponder::Lazy.respond(params[:user_name]) }
     else
       render nothing: true, status: 202
     end
