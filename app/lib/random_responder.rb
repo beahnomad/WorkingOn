@@ -5,7 +5,10 @@ module RandomResponder
     'Thank you @{{name}}! Keep up the good work :thumbsup:',
     'Awesome @{{name}}! You make me proud :notes:!',
     'Great @{{name}}, looking forward to see it in action!',
-    'Superduper @{{name}}! Carry on!'
+    'Superduper @{{name}}! Carry on!',
+    'Thanks @{{name}}, a :cookie: for your work!',
+    '@{{name}}, may the force be with you!',
+    'How wonderful @{{name}}, you are truly a great developer :heartbeat:',
   ]
 
   BAD_RESPONSES = [
