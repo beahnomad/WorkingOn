@@ -18,3 +18,7 @@ end
 group :test do
   gem 'rspec'
 end
+
+group :development, :test do
+  gem 'jazz_hands', github: 'jkrmr/jazz_hands'
+end
