@@ -24,13 +24,13 @@ module RandomResponder
   end
 
   class Bad
-    def self.respond
+    def self.respond(name)
       Mustache.render(BAD_RESPONSES.sample, name: name)
     end
   end
 
   class Lazy
-    def self.respond
+    def self.respond(name)
       Mustache.render(LAZY_RESPONSES.sample, name: name)
     end
   end
